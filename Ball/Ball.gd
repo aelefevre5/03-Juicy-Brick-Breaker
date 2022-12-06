@@ -50,8 +50,10 @@ func _integrate_forces(state):
 		state.linear_velocity = state.linear_velocity.normalized() * max_speed * speed_multiplier
 
 func change_size(s):
-	$sprite.rect_scale = s
+	$Sprite.scale = s
 	$CollisionShape2D.scale = s
+
+
 
 func change_speed(s):
 	speed_multiplier = s
