@@ -4,6 +4,7 @@ var min_speed = 100.0
 var max_speed = 600.0
 var speed_multiplier = 1.0
 var accelerate = false
+var decay = 0.04
 
 var released = true
 
