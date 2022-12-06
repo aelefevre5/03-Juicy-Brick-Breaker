@@ -94,6 +94,7 @@ pause_mode = 2
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )
+volume_db = -19.664
 autoplay = true
 
 [connection signal="timeout" from="Fever/Timer" to="Fever" method="_on_Timer_timeout"]
