@@ -23,6 +23,8 @@ func _input(event):
 
 func hit(_ball):
 	$Confetti.emitting = true
+	$Tween.interpolate_property($Sprite, "position:y", 10, 30, 1.0, Tween.TRANS_BOUNCE, Tween.EASE_IN)
+	$Tween.start()
 
 func powerup(payload):
 	for c in $Powerups.get_children():
